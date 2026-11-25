@@ -1,4 +1,4 @@
-# Lab 06: CSV Files, pandas, and Your First Script
+`# Lab 06: CSV Files, pandas, and Your First Script
 
 Introduction to Programming | 17 November 2026
 
