@@ -116,8 +116,11 @@ For one additional check, predict what happens at an individual size limit of 10
 Write only these three short answers:
 
 1. What selected labels and sizes did you predict at 250 MB, and did the saved report agree?
+I predicted H1, 250, H3 150 and H1 100. Everything checked out.
 2. What changed at 100 MB? Give one included or excluded record as evidence.
+The H1-250 and H3-150 were too big so they were not included in selected. The only record that still meet the conditions was H1-100.
 3. If you used an LLM, what suggestion did you accept or change, and which exact example checked it? If you did not use one, say so and describe one check you made yourself.
+I did not use LLM. I checked if the code meet requiremnts given instructions. I checked if the equality signs are correct and just by the hand with the predictions.
 
 At home assistance is allowed. Make your initial prediction and coding attempt first, then ask for a hint or help with one part if needed. You remain responsible for explaining your loop and the two limits.
 

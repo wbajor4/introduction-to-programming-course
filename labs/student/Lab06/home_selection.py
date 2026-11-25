@@ -22,6 +22,14 @@ def assess_scene(scene, max_cloud):
 def choose_scenes(records, max_cloud, max_size_mb):
     """Select eligible scenes no larger than the individual scene size limit."""
     selected = []
+    for record in records:
+        status=assess_scene(record, max_cloud)
+        if status=="ELIGIBLE" and record["size_mb"]<=max_size_mb:
+            selected.append({
+                "scene_id": record["scene_id"],
+                "size_mb": record["size_mb"],
+            })
+
     # HOME TASK: write the selection loop here.
     return selected
 
